@@ -1,0 +1,6 @@
+import { AppointmentCard, PageHero, StandardPage } from "../components";
+export default function Formations() {
+  return <StandardPage><PageHero eyebrow="Transmission & supervision" title={<>Former des praticiens<br /><em>pleinement présents.</em></>} lead="Des formations ancrées dans la clinique, le corps et une éthique exigeante de l’accompagnement." />
+    <section className="shell section training-grid"><article><span>01</span><h2>Formation continue</h2><p>Modules pour thérapeutes, soignants et professionnels de l’accompagnement : écoute clinique, posture, transfert, corporéité, trauma et régulation.</p></article><article><span>02</span><h2>Analyse de pratique</h2><p>Des espaces collectifs pour élaborer les situations complexes, soutenir la pensée clinique et prévenir l’épuisement professionnel.</p></article><article><span>03</span><h2>Supervision individuelle</h2><p>Un travail confidentiel autour de la pratique, des impasses rencontrées et de la juste position du professionnel.</p></article></section>
+    <section className="manifesto"><div className="shell"><p className="eyebrow light">Pédagogie</p><h2>Expérimenter.<br />Élaborer.<br /><em>Transmettre.</em></h2><p>Des apports théoriques rigoureux, des mises en situation et une attention constante à ce qui se vit dans la relation.</p></div></section><AppointmentCard /></StandardPage>;
+}
