@@ -7,7 +7,7 @@ export function Header() {
     <header className="site-header">
       <Link href="/" className="brand" aria-label="Accueil">
         <span className="brand__mark">C</span>
-        <span><strong>Cécile Gimenez</strong><small>Psyché · Corps · Conscience</small></span>
+        <span><strong>Cécile Gimenez</strong><small>Psychanalyste</small></span>
       </Link>
       <nav aria-label="Navigation principale">
         <Link href="/accompagnements">Accompagnements</Link>
