@@ -178,7 +178,7 @@ footer{background:#eee4d5;color:var(--ink);padding:80px 0 25px}
 .service-row--specialties:after{content:"05";position:absolute;right:-20px;bottom:-100px;font-family:"Italiana",serif;font-size:18rem;color:rgba(255,255,255,.025);pointer-events:none}
 .service-row--specialties .service-row__num,.service-row--specialties .eyebrow{color:#c9b89e}
 .service-row--specialties h2{font-size:clamp(3rem,4.5vw,5rem)}
-.service-row--specialties>p{color:#d8d0c5;position:relative;z-index:1}
+.service-row--specialties>p{color:#d8d0c5;position:relative;z-index:1;align-self:end;margin:0 0 8px;line-height:1.85}
 .specialty-list{display:grid;grid-template-columns:1fr 1fr;margin-top:40px;border-top:1px solid rgba(255,255,255,.16)}
 .specialty-list span{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:.72rem;color:#d8d0c5}
 .specialty-list span:nth-child(even){padding-left:18px;border-left:1px solid rgba(255,255,255,.16)}
