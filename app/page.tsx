@@ -19,7 +19,7 @@ export default function Home() {
                 <Link href="/accompagnements" className="text-link">Découvrir l’approche</Link>
               </div>
               <div className="hero__trust" aria-label="Informations pratiques">
-                <span>Adultes & adolescents</span><span>Cabinet confidentiel</span><span>Visioconférence</span>
+                <span>Adultes, adolescents & enfants</span><span>Cabinet confidentiel</span><span>Visioconférence</span>
               </div>
             </div>
             <div className="portrait-card">
