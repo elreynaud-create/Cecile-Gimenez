@@ -166,8 +166,9 @@ footer{background:#eee4d5;color:var(--ink);padding:80px 0 25px}
 .footer-title{text-transform:uppercase;letter-spacing:.15em;color:#66533a;font-size:.65rem;margin-bottom:10px}
 .footer-grid p{margin-bottom:0}
 .footer-bottom{border-top:1px solid rgba(49,43,35,.18);margin-top:65px;padding-top:20px;display:flex;justify-content:space-between;font-size:.62rem;text-transform:uppercase;letter-spacing:.11em}
-.page-hero{padding:125px 0 110px;border-bottom:1px solid var(--line);background:radial-gradient(circle at 80% 20%,rgba(202,149,158,.25),transparent 35%)}
-.page-hero h1{font-size:clamp(4.5rem,8vw,8rem);margin:0 0 35px}
+.page-hero{padding:68px 0 90px;border-bottom:1px solid var(--line);background:radial-gradient(circle at 80% 20%,rgba(202,149,158,.25),transparent 35%)}
+.page-hero .eyebrow{margin-bottom:20px}
+.page-hero h1{font-size:clamp(4rem,7vw,7rem);margin:0 0 30px}
 .page-hero__lead{font-size:1.05rem;max-width:650px;margin-left:30%;border-left:1px solid var(--accent);padding-left:30px}
 .service-list{padding-top:70px}
 .service-row{display:grid;grid-template-columns:80px .9fr 1fr;gap:50px;padding:60px 0;border-bottom:1px solid var(--line);scroll-margin-top:30px}
@@ -378,7 +379,7 @@ footer{background:#eee4d5;color:var(--ink);padding:80px 0 25px}
 .two-col{grid-template-columns:1fr}
 .appointment__inner{gap:45px}
 .footer-bottom{flex-direction:column;gap:8px}
-.page-hero{padding:90px 0 75px}
+.page-hero{padding:62px 0 68px}
 .page-hero h1{font-size:4rem}
 .gallery{grid-template-columns:1fr;height:600px}
 .gallery__stack{grid-template-columns:1fr 1fr}
