@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import MotionLayer from "./motion-layer";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://votre-domaine.fr"),
@@ -14,5 +15,5 @@ export const metadata: Metadata = {
 };
 const schema={"@context":"https://schema.org","@type":["Person","ProfessionalService"],name:"Cécile Gimenez",description:"Psychanalyste, sophrologue, somato-analyste, formatrice et clinicienne en santé mentale.",areaServed:["Fréjus","Saint-Raphaël","Var","Alpes-Maritimes","Côte d’Azur"],address:{"@type":"PostalAddress","addressLocality":"Fréjus","postalCode":"83600","addressCountry":"FR"}};
 export default function RootLayout({children}:{children:React.ReactNode}) {
-  return <html lang="fr"><body>{children}<script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}} /></body></html>;
+  return <html lang="fr"><body><MotionLayer />{children}<script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}} /></body></html>;
 }
