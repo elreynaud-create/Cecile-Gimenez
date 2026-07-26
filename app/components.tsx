@@ -43,7 +43,7 @@ export function PageHero({eyebrow,title,lead}:{eyebrow:string;title:React.ReactN
 }
 
 export function AppointmentCard() {
-  return <section className="appointment"><div className="shell appointment__inner"><div><p className="eyebrow light">Faire le premier pas</p><h2>Et si nous commencions<br />par <em>en parler ?</em></h2></div><div><p>Un premier échange permet de préciser votre demande et de sentir si cet accompagnement vous convient.</p><Link href="/rendez-vous" className="button button--light">Demander un rendez-vous <Arrow /></Link></div></div></section>;
+  return <section className="appointment"><div className="shell appointment__inner"><div><p className="eyebrow light">Faire le premier pas</p><h2>Et si nous commencions<br />par <em>en parler ?</em></h2></div><div><div className="appointment__map"><iframe title="Carte du cabinet — 49 place du Couvent, 83600 Fréjus" src="https://www.google.com/maps?q=49%20place%20du%20Couvent%2C%2083600%20Fr%C3%A9jus&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade" /><a href="https://www.google.com/maps/search/?api=1&query=49%20place%20du%20Couvent%2C%2083600%20Fr%C3%A9jus" target="_blank" rel="noreferrer">49 place du Couvent · 83600 Fréjus <Arrow /></a></div><p>Un premier échange permet de préciser votre demande et de sentir si cet accompagnement vous convient.</p><Link href="/rendez-vous" className="button button--light">Demander un rendez-vous <Arrow /></Link></div></div></section>;
 }
 
 export function StandardPage({children}:{children:React.ReactNode}) {
