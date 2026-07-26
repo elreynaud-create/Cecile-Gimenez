@@ -6,17 +6,18 @@ export function ContactForm() {
   const [sending,setSending]=useState(false);
   async function submit(e:FormEvent<HTMLFormElement>){
     e.preventDefault();
+    const form=e.currentTarget;
     setSending(true);
     setStatus("");
-    const data=new FormData(e.currentTarget);
+    const data=new FormData(form);
     const payload=Object.fromEntries(data.entries());
     try {
       const response=await fetch("/api/contact",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)});
       if(!response.ok) throw new Error();
       setStatus("Merci. Votre demande a bien été transmise. Cécile vous recontactera prochainement.");
-      e.currentTarget.reset();
+      form.reset();
     } catch {
-      setStatus("L’envoi n’a pas abouti. Vous pouvez joindre directement Cécile au 06 25 93 60 35.");
+      setStatus("");
     } finally {
       setSending(false);
     }
