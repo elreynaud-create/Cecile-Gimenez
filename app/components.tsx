@@ -1,25 +1,9 @@
 import Link from "next/link";
 import { ArrowIcon } from "./arrow-icon";
+import { SiteHeader } from "./site-header";
+export { SiteHeader as Header };
 
 export function Arrow() { return <ArrowIcon />; }
-
-export function Header() {
-  return (
-    <header className="site-header">
-      <Link href="/" className="brand" aria-label="Accueil">
-        <span className="brand__mark">C</span>
-        <span><strong>Cécile Gimenez</strong><small>Psychanalyste</small></span>
-      </Link>
-      <nav aria-label="Navigation principale">
-        <Link href="/accompagnements">Accompagnements</Link>
-        <Link href="/retraites">Retraites</Link>
-        <Link href="/formations">Formations</Link>
-        <Link href="/a-propos">À propos</Link>
-      </nav>
-      <Link href="/rendez-vous" className="nav-cta">Rendez-vous <Arrow /></Link>
-    </header>
-  );
-}
 
 export function Footer() {
   return (
@@ -48,5 +32,5 @@ export function AppointmentCard() {
 }
 
 export function StandardPage({children}:{children:React.ReactNode}) {
-  return <><Header /><main>{children}</main><Footer /></>;
+  return <><SiteHeader /><main>{children}</main><Footer /></>;
 }
