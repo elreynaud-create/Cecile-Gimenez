@@ -2,7 +2,7 @@ import Link from "next/link";
 import { AppointmentCard, Arrow, PageHero, StandardPage } from "../components";
 import Testimonials from "./testimonials";
 export default function Retraites() {
-  return <StandardPage><PageHero eyebrow="Cercle · Retraites spirituelles" title={<>Un voyage<br />au cœur de <em>soi.</em></>} lead="Des espaces-temps confidentiels pour ralentir, se déposer et renouer avec une présence plus profonde." />
+  return <StandardPage><PageHero eyebrow="Cercle · Retraites spirituelles" title={<>Un voyage<br />au cœur de soi.</>} lead="Des espaces-temps confidentiels pour ralentir, se déposer et renouer avec une présence plus profonde." />
     <section className="gallery shell"><div className="gallery__large" /><div className="gallery__stack"><div className="gallery__small one" /><div className="gallery__small two" /></div></section>
     <section className="retreat-moments section shell" aria-labelledby="retreat-moments-title">
       <div className="retreat-moments__heading">
