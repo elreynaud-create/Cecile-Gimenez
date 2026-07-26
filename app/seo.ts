@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const SITE_URL = "https://cecile-gimenez.vercel.app";
+export const SITE_URL = "https://www.cecilegimenez.fr";
 
 export function pageMetadata({
   title,
