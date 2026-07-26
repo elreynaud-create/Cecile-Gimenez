@@ -138,7 +138,6 @@ export default function Home() {
               <div className="first-session__facts">
                 <div><strong>01</strong><span>Écoute de votre demande</span></div>
                 <div><strong>02</strong><span>Choix du cadre adapté</span></div>
-                <div><strong>03</strong><span>Décision libre de poursuivre</span></div>
               </div>
               <Link href="/rendez-vous" className="button">Préparer ce premier échange <Arrow /></Link>
             </div>
