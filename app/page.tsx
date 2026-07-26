@@ -122,11 +122,10 @@ export default function Home() {
         </section>
 
         <section className="section shell two-col">
-          <div className="quote-mark">“</div>
           <blockquote>Ce qui ne peut être mis en mots<br />se met souvent <em>en corps.</em></blockquote>
           <div className="note-card">
             <p className="eyebrow">Pour qui ?</p>
-            <p>Adultes · Adolescents · Professionnels</p>
+            <p>Adultes · Adolescents · Enfants · Professionnels</p>
             <p>En cabinet à Fréjus et en visioconférence, dans toute la France.</p>
           </div>
         </section>
