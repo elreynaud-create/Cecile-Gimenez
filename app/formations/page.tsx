@@ -1,5 +1,12 @@
 import Link from "next/link";
 import { AppointmentCard, Arrow, PageHero, StandardPage } from "../components";
+import { pageMetadata } from "../seo";
+
+export const metadata = pageMetadata({
+  title: "Formation de somato-analyste — 150 heures",
+  description: "Formation professionnelle de somato-analyste en 150 heures : psychanalyse, somato-analyse, sophrologie, respiration psycho-organique, clinique et mémoire.",
+  path: "/formations",
+});
 
 const modules = [
   ["01","Fondements de la somato-analyse","Comprendre les liens entre psyché, corps, émotions et histoire personnelle. Poser les repères théoriques, cliniques et éthiques qui soutiennent la pratique."],

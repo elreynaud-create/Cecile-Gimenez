@@ -1,5 +1,12 @@
 import Link from "next/link";
 import { Arrow, AppointmentCard, Footer, Header, PracticeCard } from "./components";
+import { pageMetadata } from "./seo";
+
+export const metadata = pageMetadata({
+  title: "Psychanalyste et sophrologue à Fréjus",
+  description: "Cécile Gimenez vous reçoit à Fréjus et en ligne pour un accompagnement en psychanalyse, sophrologie, somato-analyse et santé mentale.",
+  path: "/",
+});
 
 export default function Home() {
   return (

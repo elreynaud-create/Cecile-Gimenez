@@ -1,4 +1,11 @@
 import { AppointmentCard, PageHero, StandardPage } from "../components";
+import { pageMetadata } from "../seo";
+
+export const metadata = pageMetadata({
+  title: "Psychanalyse, sophrologie et somato-analyse",
+  description: "Accompagnements à Fréjus pour enfants, adolescents et adultes : psychanalyse, sophrologie, somato-analyse, santé mentale, neuroatypies, addictions et TCA.",
+  path: "/accompagnements",
+});
 
 const items = [
   ["psychanalyse","01","Psychanalyse","Comprendre ce qui se rejoue","La cure analytique offre un espace où la parole peut se déployer librement. Elle aide à éclairer les conflits inconscients, les répétitions, les angoisses et les liens entre votre histoire et ce que vous vivez aujourd’hui."],

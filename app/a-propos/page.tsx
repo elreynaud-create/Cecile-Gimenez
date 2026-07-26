@@ -1,4 +1,12 @@
 import { AppointmentCard, PageHero, StandardPage } from "../components";
+import { pageMetadata } from "../seo";
+
+export const metadata = pageMetadata({
+  title: "À propos de Cécile Gimenez",
+  description: "Découvrez le parcours de Cécile Gimenez, psychanalyste, sophrologue, somato-analyste, formatrice et clinicienne en santé mentale à Fréjus.",
+  path: "/a-propos",
+});
+
 export default function About() {
   return <StandardPage><PageHero eyebrow="À propos" title={<>Une clinique du lien,<br />du corps et du <em>sens.</em></>} lead="Psychanalyste, sophrologue, somato-analyste, formatrice et clinicienne en santé mentale." />
     <section className="shell section about-grid"><div className="about-art"><span>Ψ</span></div><div><p className="eyebrow">Le parcours</p><h2>Accompagner sans réduire<br />l’humain à un symptôme.</h2><p>Ma pratique s’est construite au croisement de la psychanalyse, de la clinique en santé mentale et des approches psychocorporelles. Elle repose sur une écoute fine de la singularité de chacun.</p><p>Je reçois des personnes confrontées à des périodes de crise, à l’anxiété, à la dépression, au trauma, aux difficultés relationnelles ou simplement au désir de mieux se connaître.</p><p>Je transmets également cette expérience aux professionnels par la formation, l’analyse de pratique et la supervision.</p><div className="credentials"><span>Psychanalyste</span><span>Sophrologue</span><span>Somato-analyste</span><span>Formatrice</span></div></div></section><AppointmentCard /></StandardPage>;

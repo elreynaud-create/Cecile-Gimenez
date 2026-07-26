@@ -1,6 +1,14 @@
 import Link from "next/link";
 import { AppointmentCard, Arrow, PageHero, StandardPage } from "../components";
 import Testimonials from "./testimonials";
+import { pageMetadata } from "../seo";
+
+export const metadata = pageMetadata({
+  title: "Retraites spirituelles à Villa Maya",
+  description: "Retraites spirituelles près d’Essaouira : rebirth, kundalini, méditation, yoga, soins, mouvement et reconnexion à soi dans un cadre confidentiel.",
+  path: "/retraites",
+});
+
 export default function Retraites() {
   return <StandardPage><PageHero eyebrow="Cercle · Retraites spirituelles" title={<>Un voyage<br />au cœur de soi.</>} lead="Des espaces-temps confidentiels pour ralentir, se déposer et renouer avec une présence plus profonde." />
     <section className="gallery shell"><div className="gallery__large" /><div className="gallery__stack"><div className="gallery__small one" /><div className="gallery__small two" /></div></section>
