@@ -33,7 +33,6 @@ export default function Home() {
                 <span>01</span>
                 <p>Cécile Gimenez<br />Psychanalyste · Sophrologue</p>
               </div>
-              <span className="portrait-card__seal" aria-hidden="true">Écouter<br />Relier<br />Transformer</span>
             </div>
           </div>
           <div className="hero__marquee" aria-label="Domaines de pratique">
