@@ -462,14 +462,14 @@ footer{background:#eee4d5;color:var(--ink);padding:80px 0 25px}
 .hero__lead{font-size:.95rem;margin-bottom:26px}
 .hero__lead:before{display:none}
 .hero__actions{align-items:flex-start;flex-direction:column}
-.hero__marquee{justify-content:flex-start;overflow:hidden;margin-inline:-18px;height:54px;transform:none}
+.hero__marquee{justify-content:flex-start;overflow:hidden;margin-top:8px;margin-inline:-18px;height:54px;transform:none}
 .hero__marquee-track{width:max-content;gap:28px;animation:mobile-marquee 16s linear infinite;will-change:transform}
 .hero__marquee-set:nth-child(2),.hero__marquee-set:first-child>i:last-child{display:flex}
 .hero__marquee-set{flex:0 0 auto}
 .hero__trust{gap:10px 18px;margin-top:28px}
 .portrait-card{margin:42px auto 0}
 .portrait-card__seal{right:-10px}
-.intro.section{padding-top:34px}
+.intro.section{padding-top:20px}
 .intro{gap:42px}
 .intro__visual{min-height:520px}
 .practice-grid,.ritual-grid,.footer-grid,.info-band{grid-template-columns:1fr}
