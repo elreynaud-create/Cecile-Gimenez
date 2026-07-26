@@ -44,7 +44,8 @@ h2{font-size:clamp(3rem,6vw,6.5rem);margin-bottom:0}
 .hero{min-height:calc(100vh - 94px);overflow:hidden;position:relative}
 .hero__grid{display:grid;grid-template-columns:1.25fr .75fr;align-items:center;min-height:680px;padding:55px 0}
 .hero__copy{position:relative;z-index:2}
-.hero h1{font-size:clamp(5rem,10vw,10rem);margin:0 0 38px;max-width:900px}
+.hero h1{font-size:clamp(5rem,8vw,8.5rem);margin:0 0 38px;max-width:900px}
+.hero__title-line{white-space:nowrap}
 .hero__lead{font-size:1.1rem;max-width:490px;margin:0 0 40px;padding-left:82px;position:relative}
 .hero__lead:before{content:"";position:absolute;left:0;top:15px;width:55px;height:1px;background:var(--accent)}
 .hero__actions{display:flex;align-items:center;gap:32px;padding-left:82px}
@@ -298,6 +299,7 @@ footer{background:#eee4d5;color:var(--ink);padding:80px 0 25px}
 .shell{width:min(100% - 36px,700px)}
 .hero__grid{grid-template-columns:1fr;padding-top:90px}
 .hero h1{font-size:clamp(4.5rem,21vw,7.5rem)}
+.hero__title-line{white-space:normal}
 .hero__orb{width:330px;height:330px;right:-160px}
 .portrait-card{margin:80px auto 40px;width:min(360px,100%)}
 .hero__lead,.hero__actions{padding-left:0}

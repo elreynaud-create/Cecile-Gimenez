@@ -12,7 +12,7 @@ export default function Home() {
           <div className="shell hero__grid">
             <div className="hero__copy">
               <p className="eyebrow reveal reveal--1">Cabinet de psychothérapie · Fréjus & en ligne</p>
-              <h1 className="reveal reveal--2">Retrouver le fil<br />de <em>soi</em>.</h1>
+              <h1 className="reveal reveal--2"><span className="hero__title-line">Retrouver le fil</span><br />de <em>soi</em>.</h1>
               <p className="hero__lead reveal reveal--3">Un accompagnement sensible et structuré pour comprendre ce qui se rejoue, apaiser ce qui déborde et retrouver une relation plus libre à soi.</p>
               <div className="hero__actions">
                 <Link href="/rendez-vous" className="button">Prendre rendez-vous <Arrow /></Link>
