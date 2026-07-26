@@ -34,8 +34,8 @@ export function Footer() {
   );
 }
 
-export function PracticeCard({number,title,text,href}:{number:string;title:string;text:string;href:string}) {
-  return <Link href={href} className="practice-card"><span>{number}</span><div className="practice-symbol" aria-hidden="true">{number === "01" ? "◯" : number === "02" ? "⌁" : number === "03" ? "∿" : "✦"}</div><h3>{title}</h3><p>{text}</p><b>Découvrir <Arrow /></b><i aria-hidden="true" /></Link>;
+export function PracticeCard({number,title,text,href,featured=false,tags=[]}:{number:string;title:string;text:string;href:string;featured?:boolean;tags?:string[]}) {
+  return <Link href={href} className={featured ? "practice-card practice-card--featured" : "practice-card"}><span>{number}</span><div className="practice-symbol" aria-hidden="true">{number === "01" ? "◯" : number === "02" ? "⌁" : number === "03" ? "∿" : "✦"}</div><h3>{title}</h3><p>{text}</p>{tags.length > 0 && <div className="practice-card__tags">{tags.map(tag=><span key={tag}>{tag}</span>)}</div>}<b>Découvrir <Arrow /></b><i aria-hidden="true" /></Link>;
 }
 
 export function PageHero({eyebrow,title,lead}:{eyebrow:string;title:React.ReactNode;lead:string}) {
