@@ -174,18 +174,14 @@ footer{background:#eee4d5;color:var(--ink);padding:80px 0 25px}
 .service-row__num{font-family:"Italiana";font-size:1.8rem;color:var(--accent-soft)}
 .service-row h2{font-size:2.6rem;margin:0}
 .service-row>p{font-size:.95rem}
-.service-row--specialties{margin-top:40px;padding:70px 45px;background:var(--ink);color:var(--cream);border-bottom:0;grid-template-columns:70px 1.2fr .8fr;position:relative;overflow:hidden}
+.service-row--specialties{margin-top:40px;padding:70px 45px;background:var(--ink);color:var(--cream);border-bottom:0;grid-template-columns:1fr;position:relative;overflow:hidden;text-align:center}
 .service-row--specialties:after{content:"05";position:absolute;right:-20px;bottom:-100px;font-family:"Italiana",serif;font-size:18rem;color:rgba(255,255,255,.025);pointer-events:none}
 .service-row--specialties .service-row__num,.service-row--specialties .eyebrow{color:#c9b89e}
 .service-row--specialties h2{font-size:clamp(3rem,4.5vw,5rem)}
+.service-row--specialties>div{width:min(860px,100%);margin:auto}
 .specialty-list{display:grid;grid-template-columns:1fr 1fr;margin-top:40px;border-top:1px solid rgba(255,255,255,.16)}
-.specialty-list span{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:.72rem;color:#d8d0c5}
+.specialty-list span{padding:14px 10px;border-bottom:1px solid rgba(255,255,255,.16);font-size:.75rem;color:#d8d0c5;text-align:center}
 .specialty-list span:nth-child(even){padding-left:18px;border-left:1px solid rgba(255,255,255,.16)}
-.specialty-focus{align-self:stretch;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.14);position:relative;z-index:1}
-.specialty-focus__item{background:#3a332a;padding:22px 20px;display:grid;grid-template-columns:28px 1fr;gap:12px;align-content:start}
-.specialty-focus__item>span{font-family:"Italiana",serif;color:#b9a68a}
-.specialty-focus h3{font-family:"Italiana",serif;font-size:1.25rem;font-weight:400;margin:0 0 9px;color:var(--paper)}
-.specialty-focus p{font-size:.69rem;line-height:1.65;color:#cfc7bc;margin:0}
 .info-band{margin-bottom:120px;padding:35px;background:var(--sand);display:grid;grid-template-columns:1fr 1fr;gap:70px;font-size:.8rem}
 .gallery{display:grid;grid-template-columns:1.7fr 1fr;gap:14px;height:650px;margin-top:70px}
 .gallery__large{background:url('/villa-maya-2.jpg') center/cover}
@@ -398,10 +394,9 @@ footer{background:#eee4d5;color:var(--ink);padding:80px 0 25px}
 .retreat-moments__grid{grid-template-columns:1fr;grid-template-rows:520px 420px 480px}
 .retreat-moment--practice{grid-row:auto}
 .service-row{gap:20px}
-.service-row--specialties{padding:48px 24px;grid-template-columns:38px 1fr}
+.service-row--specialties{padding:48px 24px;grid-template-columns:1fr}
 .specialty-list{grid-template-columns:1fr}
 .specialty-list span:nth-child(even){padding-left:0;border-left:0}
-.specialty-focus{grid-column:2;grid-template-columns:1fr}
 .contact-form{padding:28px 22px}
 .field-row{grid-template-columns:1fr}
 .emergency{flex-direction:column}
