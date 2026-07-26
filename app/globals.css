@@ -168,8 +168,8 @@ footer{background:#eee4d5;color:var(--ink);padding:80px 0 25px}
 .footer-bottom{border-top:1px solid rgba(49,43,35,.18);margin-top:65px;padding-top:20px;display:flex;justify-content:space-between;font-size:.62rem;text-transform:uppercase;letter-spacing:.11em}
 .page-hero{padding:68px 0 90px;border-bottom:1px solid var(--line);background:radial-gradient(circle at 80% 20%,rgba(202,149,158,.25),transparent 35%)}
 .page-hero .eyebrow{margin-bottom:20px}
-.page-hero h1{font-size:clamp(4rem,7vw,7rem);margin:0 0 30px}
-.page-hero__lead{font-size:1.05rem;max-width:650px;margin-left:30%;border-left:1px solid var(--accent);padding-left:30px}
+.page-hero h1{font-size:clamp(4rem,7vw,7rem);margin:0;position:relative;z-index:2;overflow:visible}
+.page-hero__lead{font-size:1.05rem;max-width:650px;margin:58px 0 0 30%;border-left:1px solid var(--accent);padding-left:30px;position:relative;z-index:1}
 .service-list{padding-top:70px}
 .service-row{display:grid;grid-template-columns:80px .9fr 1fr;gap:50px;padding:60px 0;border-bottom:1px solid var(--line);scroll-margin-top:30px}
 .service-row__num{font-family:"Italiana";font-size:1.8rem;color:var(--accent-soft)}
@@ -315,6 +315,7 @@ footer{background:#eee4d5;color:var(--ink);padding:80px 0 25px}
 .motion-ready .scroll-reveal{opacity:0;transform:translateY(44px);clip-path:inset(0 0 22% 0);transition:opacity .9s cubic-bezier(.22,1,.36,1),transform 1s cubic-bezier(.22,1,.36,1),clip-path 1s cubic-bezier(.22,1,.36,1);transition-delay:calc(min(var(--reveal-order,0),4) * 85ms)}
 .motion-ready .scroll-reveal.is-visible{opacity:1;transform:translateY(0);clip-path:inset(0)}
 .motion-ready h2.scroll-reveal,.motion-ready .page-hero h1.scroll-reveal,.motion-ready blockquote.scroll-reveal{transform:translateY(55px);clip-path:inset(0 0 45% 0);transition-duration:1.15s}
+.motion-ready h2.scroll-reveal.is-visible,.motion-ready .page-hero h1.scroll-reveal.is-visible,.motion-ready blockquote.scroll-reveal.is-visible{transform:translateY(0);clip-path:inset(0)}
 .motion-ready .intro__visual.scroll-reveal,.motion-ready .retreat-feature__image.scroll-reveal,.motion-ready .gallery>*.scroll-reveal,.motion-ready .about-art.scroll-reveal{transform:scale(.96);clip-path:inset(8% 0 0);transition-duration:1.35s}
 .motion-ready .intro__visual.scroll-reveal.is-visible,.motion-ready .retreat-feature__image.scroll-reveal.is-visible,.motion-ready .gallery>*.scroll-reveal.is-visible,.motion-ready .about-art.scroll-reveal.is-visible{transform:scale(1);clip-path:inset(0)}
 .practice-card:focus-visible,.button:focus-visible,.text-link:focus-visible,.site-header a:focus-visible{outline:1px solid var(--accent);outline-offset:5px}
@@ -352,7 +353,7 @@ footer{background:#eee4d5;color:var(--ink);padding:80px 0 25px}
 .experience-grid{grid-template-columns:1fr 1fr}
 .testimonial-form{grid-template-columns:1fr}
 .gallery{height:500px}
-.page-hero__lead{margin-left:0}
+.page-hero__lead{margin:42px 0 0}
 .section{padding:90px 0}
 }
 
