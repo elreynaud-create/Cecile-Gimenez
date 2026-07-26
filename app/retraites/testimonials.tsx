@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useEffect, useState } from "react";
+import { ArrowIcon } from "../arrow-icon";
 
 type Testimonial = { name: string; text: string; sample?: boolean };
 
@@ -57,7 +58,7 @@ export default function Testimonials() {
         <form className="testimonial-form shell" onSubmit={submit}>
           <label>Votre prénom<input name="name" required maxLength={40} /></label>
           <label>Votre commentaire<textarea name="comment" required maxLength={500} rows={4} /></label>
-          <button className="button" type="submit">Publier mon commentaire <span aria-hidden="true">↗</span></button>
+          <button className="button" type="submit">Publier mon commentaire <ArrowIcon /></button>
           {sent && <p className="form-status" role="status">Merci, votre commentaire a bien été ajouté sur cet appareil.</p>}
         </form>
       )}

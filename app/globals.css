@@ -23,6 +23,9 @@ h2{font-size:clamp(3rem,6vw,6.5rem);margin-bottom:0}
 .button:active{transform:translateY(0) scale(.97)}
 .button span{font-size:1.2rem;transition:transform .35s}
 .button:hover span{transform:rotate(45deg)}
+.arrow-icon{display:inline-flex!important;width:1.05em;height:1.05em;flex:0 0 auto;vertical-align:-.12em;color:inherit}
+.arrow-icon svg{display:block;width:100%;height:100%;overflow:visible}
+.arrow-icon path{fill:none;stroke:currentColor;stroke-width:1.35;stroke-linecap:round;stroke-linejoin:round}
 .button--light{background:var(--paper);color:var(--ink)}
 .text-link{display:inline-flex;gap:12px;border-bottom:1px solid var(--accent);padding-bottom:5px;color:var(--accent);font-size:.82rem;font-weight:600;transition:gap .3s,color .3s}
 .text-link:hover{gap:18px;color:var(--ink)}

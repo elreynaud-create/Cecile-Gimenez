@@ -1,6 +1,7 @@
 import Link from "next/link";
+import { ArrowIcon } from "./arrow-icon";
 
-export function Arrow() { return <span aria-hidden="true">↗</span>; }
+export function Arrow() { return <ArrowIcon />; }
 
 export function Header() {
   return (
