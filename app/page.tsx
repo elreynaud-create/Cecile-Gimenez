@@ -62,6 +62,7 @@ export default function Home() {
           <div className="intro__text">
             <p>Je vous accueille dans un cadre confidentiel, stable et sans jugement. Ensemble, nous prenons le temps d’entendre ce qui demande à l’être, de reconnaître vos ressources et de construire un chemin qui respecte votre rythme.</p>
             <p>Mon approche intégrative relie la profondeur de la psychanalyse, l’attention au corps de la somato-analyse et les outils de régulation de la sophrologie. Elle ne propose pas de réponse toute faite : elle ouvre un espace où votre propre compréhension peut émerger.</p>
+            <p>Chaque accompagnement est singulier. Il se construit au fil des séances, dans une attention portée à votre histoire, à vos ressentis et à ce qui se transforme peu à peu. L’objectif n’est pas de devenir quelqu’un d’autre, mais de retrouver davantage de liberté dans votre manière d’être, de choisir et d’avancer.</p>
             <Link href="/a-propos" className="text-link">En savoir plus sur mon parcours <Arrow /></Link>
           </div>
         </section>
