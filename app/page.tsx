@@ -95,6 +95,7 @@ export default function Home() {
               <PracticeCard number="02" title="Sophrologie" text="Retrouver un équilibre par la respiration, la détente et la conscience corporelle." href="/accompagnements#sophrologie" />
               <PracticeCard number="03" title="Somato-analyse" text="Écouter la mémoire du corps et restaurer une relation vivante à soi." href="/accompagnements#somato" />
               <PracticeCard number="04" title="Santé mentale" text="Un accompagnement clinique pour les périodes de vulnérabilité psychique." href="/accompagnements#clinique" />
+              <PracticeCard number="05" title="Spécialités" text="Anxiété, trauma, deuil, épuisement, relations, passages de vie et manifestations du corps." href="/accompagnements#specialites" />
             </div>
           </div>
         </section>

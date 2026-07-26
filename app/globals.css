@@ -101,8 +101,8 @@ h2{font-size:clamp(3rem,6vw,6.5rem);margin-bottom:0}
 .section-heading{margin-bottom:70px}
 .section-heading__split{display:grid;grid-template-columns:1fr 340px;gap:80px;align-items:end}
 .section-heading__split>p{margin:0 0 8px;color:#6d6255}
-.practice-grid{display:grid;grid-template-columns:repeat(4,1fr);border-left:1px solid var(--line)}
-.practice-card{padding:35px 28px 28px;border:1px solid var(--line);border-left:0;min-height:400px;transition:transform .4s cubic-bezier(.2,.8,.2,1),background .4s,box-shadow .4s;background:rgba(255,255,255,.08);position:relative;overflow:hidden}
+.practice-grid{display:grid;grid-template-columns:repeat(5,1fr);border-left:1px solid var(--line)}
+.practice-card{padding:35px 24px 28px;border:1px solid var(--line);border-left:0;min-height:400px;transition:transform .4s cubic-bezier(.2,.8,.2,1),background .4s,box-shadow .4s;background:rgba(255,255,255,.08);position:relative;overflow:hidden}
 .practice-card:hover{background:var(--paper);transform:translateY(-10px);box-shadow:0 24px 50px rgba(57,45,29,.09)}
 .practice-card:active{transform:translateY(-3px) scale(.985)}
 .practice-card>span{font-family:"Italiana";color:var(--accent-soft);font-size:1.2rem}
