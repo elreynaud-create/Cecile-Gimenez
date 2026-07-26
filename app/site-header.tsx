@@ -14,9 +14,21 @@ const links = [
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const [showMenuHint, setShowMenuHint] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => setOpen(false), [pathname]);
+
+  useEffect(() => {
+    try {
+      const hintKey = "cecile-mobile-menu-hint-seen";
+      if (window.localStorage.getItem(hintKey)) return;
+      window.localStorage.setItem(hintKey, "true");
+      setShowMenuHint(true);
+    } catch {
+      setShowMenuHint(true);
+    }
+  }, []);
 
   useEffect(() => {
     if (!open) return;
@@ -48,7 +60,7 @@ export function SiteHeader() {
             onClick={() => setOpen((value) => !value)}
           >
             <span className="brand__mark">C</span>
-            <span className="brand__menu-hint" aria-hidden="true">Touchez pour ouvrir</span>
+            {showMenuHint && <span className="brand__menu-hint" aria-hidden="true">Touchez pour ouvrir</span>}
           </button>
           <Link href="/" aria-label="Accueil">
             <strong>Cécile Gimenez</strong>
