@@ -47,7 +47,7 @@ export default function Home() {
             <h2>Mettre des mots.<br /><em>Remettre du mouvement.</em></h2>
             <div className="intro__aside">
               <span aria-hidden="true" />
-              <p>Il arrive que les mots ne suffisent plus, que le corps parle à leur place ou qu’une même difficulté revienne, malgré toute la volonté d’avancer.</p>
+              <p>Parce qu’être entendu autrement permet parfois de se rencontrer autrement. La thérapie devient alors un lieu de passage : de ce qui enferme vers ce qui remet en mouvement.</p>
             </div>
           </div>
           <figure className="intro__visual">
@@ -60,7 +60,6 @@ export default function Home() {
             <figcaption><span>02</span><p>Un espace pour déposer,<br />comprendre et transformer.</p></figcaption>
           </figure>
           <div className="intro__text">
-            <p className="intro__opening">Parce qu’être entendu autrement permet parfois de se rencontrer autrement. La thérapie devient alors un lieu de passage : de ce qui enferme vers ce qui remet en mouvement.</p>
             <p>Je vous accueille dans un cadre confidentiel, stable et sans jugement. Ensemble, nous prenons le temps d’entendre ce qui demande à l’être, de reconnaître vos ressources et de construire un chemin qui respecte votre rythme.</p>
             <p>Mon approche intégrative relie la profondeur de la psychanalyse, l’attention au corps de la somato-analyse et les outils de régulation de la sophrologie. Elle ne propose pas de réponse toute faite : elle ouvre un espace où votre propre compréhension peut émerger.</p>
             <Link href="/a-propos" className="text-link">En savoir plus sur mon parcours <Arrow /></Link>
