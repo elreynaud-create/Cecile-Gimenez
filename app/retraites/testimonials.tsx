@@ -68,12 +68,10 @@ export default function Testimonials() {
             <article className="testimonial-card" key={`${item.name}-${index}`}>
               <span aria-hidden="true">“</span>
               <p>{item.text}</p>
-              <div className="testimonial-card__author">— {item.name}</div>
             </article>
           ))}
         </div>
       </div>
-      <p className="shell testimonials__note">Les quatre témoignages affichés par défaut sont des exemples éditoriaux à remplacer par des retours réels et autorisés avant diffusion publique.</p>
     </section>
   );
 }
