@@ -45,6 +45,10 @@ export default function Home() {
           <div className="intro__heading">
             <p className="eyebrow">Une présence clinique, une écoute singulière</p>
             <h2>Mettre des mots.<br /><em>Remettre du mouvement.</em></h2>
+            <div className="intro__aside">
+              <span aria-hidden="true" />
+              <p>Parce qu’être entendu autrement permet parfois de se rencontrer autrement. La thérapie devient alors un lieu de passage : de ce qui enferme vers ce qui remet en mouvement.</p>
+            </div>
           </div>
           <figure className="intro__visual">
             <img
