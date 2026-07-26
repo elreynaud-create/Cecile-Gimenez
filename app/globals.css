@@ -60,7 +60,7 @@ h2{font-size:clamp(3rem,6vw,6.5rem);margin-bottom:0}
 .hero__grain{position:absolute;inset:0;opacity:.2;pointer-events:none;background-image:radial-gradient(rgba(49,43,35,.28) .5px,transparent .5px);background-size:6px 6px;mask-image:linear-gradient(to right,transparent 10%,black 80%)}
 .portrait-card{height:520px;width:360px;margin-left:auto;background:var(--wine-dark);position:relative;z-index:1;box-shadow:0 30px 70px rgba(61,25,34,.24)}
 .portrait-card{animation:portrait-enter 1.25s .35s cubic-bezier(.22,1,.36,1) both;transform-origin:50% 100%}
-.portrait-art{height:420px;position:relative;overflow:hidden;background:url('/cecile-gimenez-portrait.jpeg') center 43%/cover no-repeat #f8f1e6}
+.portrait-art{height:420px;position:relative;overflow:hidden;background:url('/cecile-gimenez-portrait-editorial.png') center 42%/cover no-repeat #f8f1e6}
 .portrait-sun{display:none}
 .portrait-line{display:none}
 .portrait-line.one{width:200px;height:300px;left:85px;top:80px}
