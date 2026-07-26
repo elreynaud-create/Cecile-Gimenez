@@ -36,6 +36,9 @@ export function SiteHeader() {
     <>
       <header className={`site-header${open ? " menu-open" : ""}`}>
         <div className="brand">
+          <Link href="/" className="brand__desktop-mark" aria-label="Accueil">
+            <span className="brand__mark">C</span>
+          </Link>
           <button
             className="brand__menu"
             type="button"
