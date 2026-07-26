@@ -31,7 +31,7 @@ export default function Home() {
               </div>
               <div className="portrait-caption">
                 <span>01</span>
-                <p>Cécile Gimenez<br />Psychanalyste · Sophrologue</p>
+                <p>Cécile Gimenez<br />Psychanalyste · Sophrologue<br />Clinicienne en santé mentale</p>
               </div>
             </div>
           </div>
