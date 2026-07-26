@@ -196,7 +196,8 @@ footer{background:#eee4d5;color:var(--ink);padding:80px 0 25px}
 .manifesto>div>p:last-child{max-width:480px;margin-left:auto}
 .annual-retreats{background:var(--paper)}
 .annual-retreats__intro{display:grid;grid-template-columns:1.1fr .9fr;gap:110px;align-items:end;margin-bottom:75px}
-.annual-retreats__intro>p{font-size:1.02rem;color:#5d5449;margin-bottom:8px}
+.annual-retreats__promise{font-size:1.02rem;color:#5d5449}
+.annual-retreats__promise p:last-child{font-family:"Italiana",serif;font-size:1.42rem;line-height:1.42;color:var(--accent);margin-bottom:0}
 .session-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .session-card{min-height:560px;padding:55px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end}
 .session-card:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 15%,rgba(255,255,255,.5),transparent 35%);pointer-events:none}
@@ -226,6 +227,19 @@ footer{background:#eee4d5;color:var(--ink);padding:80px 0 25px}
 .freedom-list span{padding:18px 0;border-bottom:1px solid var(--line);font-family:"Italiana",serif;font-size:1.35rem}
 .freedom-list span:nth-child(even){padding-left:25px;border-left:1px solid var(--line)}
 .freedom-section__closing{font-family:"Italiana",serif!important;font-size:1.45rem!important;line-height:1.4;color:var(--accent)!important;margin:32px 0!important}
+.retreat-conversion{position:relative;overflow:hidden;background:var(--ink);color:var(--cream);padding:130px 0}
+.retreat-conversion__orb{position:absolute;width:720px;height:720px;border:1px solid rgba(201,184,158,.19);border-radius:50%;top:-280px;right:-170px}
+.retreat-conversion__orb:before,.retreat-conversion__orb:after{content:"";position:absolute;border:1px solid rgba(201,184,158,.11);border-radius:50%}
+.retreat-conversion__orb:before{inset:70px}.retreat-conversion__orb:after{inset:150px}
+.retreat-conversion__inner{position:relative}
+.retreat-conversion h2{font-size:clamp(4rem,7.5vw,8rem);max-width:1100px;margin:0 0 85px}
+.retreat-conversion h2 em{color:#c9b89e}
+.retreat-conversion__copy{width:min(660px,100%);margin-left:auto}
+.retreat-conversion__lead{font-family:"Italiana",serif;font-size:clamp(1.65rem,2.4vw,2.15rem);line-height:1.35;color:#e6d9c7}
+.retreat-conversion__copy>p:not(.retreat-conversion__lead){color:#d8d0c5}
+.retreat-conversion__questions{margin:42px 0;border-top:1px solid rgba(255,255,255,.16)}
+.retreat-conversion__questions span{display:block;padding:17px 0;border-bottom:1px solid rgba(255,255,255,.16);font-family:"Italiana",serif;font-size:1.35rem;color:#e6d9c7}
+.retreat-conversion__copy small{display:block;margin-top:18px;color:#afa69a;font-size:.68rem;max-width:500px}
 .testimonials{background:var(--wine-dark);padding:110px 0 55px;overflow:hidden}
 .testimonials__head{display:grid;grid-template-columns:1fr .7fr;gap:100px;align-items:end;margin-bottom:65px}
 .testimonials__head h2{font-size:clamp(3.5rem,5.8vw,6rem)}
@@ -305,6 +319,7 @@ footer{background:#eee4d5;color:var(--ink);padding:80px 0 25px}
 .service-row>p{grid-column:2}
 .training-grid{grid-template-columns:1fr}
 .annual-retreats__intro,.immersive-program__head,.freedom-section,.testimonials__head{grid-template-columns:1fr;gap:45px}
+.retreat-conversion h2{margin-bottom:60px}
 .experience-grid{grid-template-columns:1fr 1fr}
 .testimonial-form{grid-template-columns:1fr}
 .gallery{height:500px}

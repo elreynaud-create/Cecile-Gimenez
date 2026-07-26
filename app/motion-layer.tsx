@@ -33,6 +33,8 @@ const REVEAL_SELECTOR = [
   ".immersive-program__head > *",
   ".experience-grid article",
   ".freedom-section > *",
+  ".retreat-conversion__inner > *",
+  ".retreat-conversion__copy > *",
   ".testimonials__head > *",
   ".manifesto .shell > *",
   ".about-grid > *",

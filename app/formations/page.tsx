@@ -10,19 +10,19 @@ export default function Formations() {
       <div className="shell">
         <div className="annual-retreats__intro">
           <div><p className="eyebrow">Deux rendez-vous par an</p><h2>Deux retraites.<br /><em>Deux expériences uniques.</em></h2></div>
-          <p>Chaque année, deux sessions sont proposées à Villa Maya, près d’Essaouira : une retraite exclusivement réservée aux femmes et une retraite mixte, ouverte aux femmes comme aux hommes. Deux formats intimes, pensés pour se déposer, se reconnecter et vivre une transformation profonde dans un cadre exceptionnel.</p>
+          <div className="annual-retreats__promise"><p>Il existe des moments où continuer comme avant n’est plus possible. Des moments où l’on ressent le besoin de sortir du bruit, de revenir au corps et d’écouter enfin les questions que le quotidien laisse sans réponse.</p><p>Deux fois par an, Villa Maya devient cet espace de passage : une retraite réservée aux femmes et une retraite mixte. Quelques jours à part, dans un groupe intime, pour ralentir, ressentir et laisser émerger une manière plus libre d’habiter sa vie.</p></div>
         </div>
         <div className="session-grid">
           <article className="session-card session-card--women">
             <span>Session 01 · Femmes</span>
             <h3>Le Cercle<br />des femmes</h3>
-            <p>Un espace entre femmes pour déposer les rôles, écouter le corps, renouer avec son énergie et retrouver une puissance douce. La parole, le mouvement, le soin et le silence se répondent au fil d’une expérience profondément soutenante.</p>
+            <p>Un espace entre femmes pour déposer ce que l’on porte depuis trop longtemps, retrouver la voix du corps et renouer avec une puissance qui n’a rien à prouver. Ici, la parole peut être vraie, le silence pleinement habité et la vulnérabilité devenir une force.</p>
             <ul><li>Groupe intime et confidentiel</li><li>Pratiques adaptées au rythme de chacune</li><li>Temps de cercle et d’intégration</li></ul>
           </article>
           <article className="session-card session-card--mixed">
             <span>Session 02 · Mixte</span>
             <h3>Le Cercle<br />du vivant</h3>
-            <p>Une retraite ouverte aux femmes et aux hommes pour explorer une relation plus consciente à soi, au corps et aux autres. Un espace où les différences deviennent une richesse et où chacun peut avancer avec liberté, respect et authenticité.</p>
+            <p>Une retraite ouverte aux femmes et aux hommes pour sortir des automatismes, rencontrer l’autre autrement et retrouver une présence plus consciente. Les différences deviennent un miroir, les pratiques ouvrent de nouveaux possibles et chacun avance sans masque, à son rythme.</p>
             <ul><li>Femmes et hommes</li><li>Équilibre entre pratiques et temps libres</li><li>Cadre sécurisant et bienveillant</li></ul>
           </article>
         </div>
@@ -39,6 +39,26 @@ export default function Formations() {
     <section className="freedom-section section shell">
       <div><p className="eyebrow">La liberté fait partie du voyage</p><h2>Votre retraite,<br /><em>à votre manière.</em></h2></div>
       <div className="freedom-section__copy"><p>Une retraite spirituelle n’est pas un programme à réussir. Entre les pratiques, chacun reste libre de se reposer, de profiter de la maison ou de partir découvrir les environs. Il est possible de vivre pleinement le groupe tout en respectant son propre besoin d’espace.</p><div className="freedom-list"><span>Quad dans les paysages</span><span>Surf sur la côte</span><span>Visite d’Essaouira</span><span>Plage & nature</span><span>Repos à la villa</span><span>Temps pour soi</span></div><p className="freedom-section__closing">Vous pouvez suivre chaque proposition, choisir seulement certains temps ou simplement vous laisser porter. L’essentiel est de revenir à vous.</p><Link href="/rendez-vous?motif=retraite" className="button">Découvrir les prochaines dates <Arrow /></Link></div>
+    </section>
+
+    <section className="retreat-conversion">
+      <div className="retreat-conversion__orb" aria-hidden="true" />
+      <div className="shell retreat-conversion__inner">
+        <p className="eyebrow light">Et si la réponse ne se trouvait pas plus loin…</p>
+        <h2>Mais dans un espace<br />où vous pouvez enfin<br /><em>vous entendre.</em></h2>
+        <div className="retreat-conversion__copy">
+          <p className="retreat-conversion__lead">Vous ne venez pas chercher des réponses toutes faites. Vous venez créer les conditions pour que les vôtres puissent apparaître.</p>
+          <p>Pendant quelques jours, le rythme ralentit. Le mental cesse de devoir tout résoudre. Le souffle, le mouvement, les soins, la présence du groupe et la beauté du lieu ouvrent un espace différent — un espace où ce qui semblait confus peut commencer à s’éclairer.</p>
+          <p>Il ne s’agit pas de devenir une autre personne. Il s’agit de rencontrer, peut-être plus pleinement que jamais, celle ou celui que vous êtes déjà. Certaines expériences ne s’expliquent pas entièrement : elles se traversent, se ressentent et continuent parfois de résonner bien après le retour.</p>
+          <div className="retreat-conversion__questions">
+            <span>Qu’est-ce qui demande à changer ?</span>
+            <span>Qu’est-ce que je ne veux plus porter ?</span>
+            <span>À quoi ai-je envie de dire oui ?</span>
+          </div>
+          <Link href="/rendez-vous?motif=retraite" className="button button--light">Sentir si cette retraite est pour moi <Arrow /></Link>
+          <small>Un premier échange confidentiel, sans engagement, permet de vérifier si l’expérience correspond à votre situation.</small>
+        </div>
+      </div>
     </section>
 
     <Testimonials />
