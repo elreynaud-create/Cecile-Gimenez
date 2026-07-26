@@ -434,7 +434,7 @@ footer{background:#eee4d5;color:var(--ink);padding:80px 0 25px}
 .site-header.menu-open{transform:none!important;background:rgba(251,248,242,.98)}
 .brand__desktop-mark{display:none!important}
 .brand__menu{display:block;position:relative;border:0;padding:0;background:transparent;color:inherit;cursor:pointer}
-.brand__menu-hint{display:block;position:absolute;top:43px;left:50%;width:max-content;transform:translateX(-50%);font-size:.46rem;line-height:1;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);pointer-events:none;animation:menu-hint 6s ease forwards}
+.brand__menu-hint{display:block;position:absolute;top:46px;left:0;width:max-content;padding:6px 8px;border:1px solid var(--line);border-radius:3px;background:var(--paper);box-shadow:0 8px 18px rgba(49,43,35,.1);font-size:.46rem;line-height:1;text-transform:uppercase;letter-spacing:.07em;color:var(--accent);pointer-events:none;z-index:2;animation:menu-hint 3s ease forwards}
 .site-header.menu-open .brand__menu-hint{display:none}
 .brand__menu .brand__mark{transition:transform .65s cubic-bezier(.22,1,.36,1),background .35s,color .35s}
 .site-header.menu-open .brand__menu .brand__mark{transform:rotate(135deg);background:var(--accent);color:var(--paper)}
