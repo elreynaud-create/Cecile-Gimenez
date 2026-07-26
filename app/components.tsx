@@ -35,7 +35,7 @@ export function Footer() {
 }
 
 export function PracticeCard({number,title,text,href}:{number:string;title:string;text:string;href:string}) {
-  return <Link href={href} className="practice-card"><span>{number}</span><div className="practice-symbol" aria-hidden="true">{number === "01" ? "◯" : number === "02" ? "⌁" : number === "03" ? "∿" : "✦"}</div><h3>{title}</h3><p>{text}</p><b>Découvrir <Arrow /></b></Link>;
+  return <Link href={href} className="practice-card"><span>{number}</span><div className="practice-symbol" aria-hidden="true">{number === "01" ? "◯" : number === "02" ? "⌁" : number === "03" ? "∿" : "✦"}</div><h3>{title}</h3><p>{text}</p><b>Découvrir <Arrow /></b><i aria-hidden="true" /></Link>;
 }
 
 export function PageHero({eyebrow,title,lead}:{eyebrow:string;title:React.ReactNode;lead:string}) {

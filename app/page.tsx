@@ -8,14 +8,18 @@ export default function Home() {
       <main>
         <section className="hero">
           <div className="hero__orb" aria-hidden="true" />
+          <div className="hero__grain" aria-hidden="true" />
           <div className="shell hero__grid">
             <div className="hero__copy">
-              <p className="eyebrow">Cabinet de psychothérapie · Fréjus & en ligne</p>
-              <h1>Retrouver le fil<br />de <em>soi</em>.</h1>
-              <p className="hero__lead">Un espace de parole, de conscience et de transformation où le corps et la psyché se rencontrent.</p>
+              <p className="eyebrow reveal reveal--1">Cabinet de psychothérapie · Fréjus & en ligne</p>
+              <h1 className="reveal reveal--2">Retrouver le fil<br />de <em>soi</em>.</h1>
+              <p className="hero__lead reveal reveal--3">Un accompagnement sensible et structuré pour comprendre ce qui se rejoue, apaiser ce qui déborde et retrouver une relation plus libre à soi.</p>
               <div className="hero__actions">
                 <Link href="/rendez-vous" className="button">Prendre rendez-vous <Arrow /></Link>
                 <Link href="/accompagnements" className="text-link">Découvrir l’approche</Link>
+              </div>
+              <div className="hero__trust" aria-label="Informations pratiques">
+                <span>Adultes & adolescents</span><span>Cabinet confidentiel</span><span>Visioconférence</span>
               </div>
             </div>
             <div className="portrait-card">
@@ -27,8 +31,9 @@ export default function Home() {
               </div>
               <div className="portrait-caption">
                 <span>01</span>
-                <p>Clinicienne en santé mentale<br />Psychanalyste · Sophrologue</p>
+                <p>Cécile Gimenez<br />Psychanalyste · Sophrologue</p>
               </div>
+              <span className="portrait-card__seal" aria-hidden="true">Écouter<br />Relier<br />Transformer</span>
             </div>
           </div>
           <div className="hero__marquee" aria-label="Domaines de pratique">
@@ -38,13 +43,29 @@ export default function Home() {
 
         <section className="intro section shell">
           <div>
-            <p className="eyebrow">Une écoute singulière</p>
+            <p className="eyebrow">Une présence clinique, une écoute singulière</p>
             <h2>Mettre des mots.<br /><em>Remettre du mouvement.</em></h2>
           </div>
           <div className="intro__text">
-            <p>Chaque histoire mérite une écoute attentive, sans jugement. Je vous accompagne dans un cadre sécurisant pour traverser les moments de rupture, apaiser les symptômes et ouvrir de nouveaux possibles.</p>
-            <p>Mon approche intégrative associe la profondeur de la psychanalyse, l’attention au corps de la somato-analyse et les outils de régulation de la sophrologie.</p>
+            <p className="intro__opening">Il arrive que les mots ne suffisent plus, que le corps parle à leur place ou qu’une même difficulté revienne, malgré toute la volonté d’avancer.</p>
+            <p>Je vous accueille dans un cadre confidentiel, stable et sans jugement. Ensemble, nous prenons le temps d’entendre ce qui demande à l’être, de reconnaître vos ressources et de construire un chemin qui respecte votre rythme.</p>
+            <p>Mon approche intégrative relie la profondeur de la psychanalyse, l’attention au corps de la somato-analyse et les outils de régulation de la sophrologie. Elle ne propose pas de réponse toute faite : elle ouvre un espace où votre propre compréhension peut émerger.</p>
             <Link href="/a-propos" className="text-link">En savoir plus sur mon parcours <Arrow /></Link>
+          </div>
+        </section>
+
+        <section className="signals" aria-labelledby="signals-title">
+          <div className="shell signals__inner">
+            <div className="signals__heading">
+              <p className="eyebrow">Quand consulter ?</p>
+              <h2 id="signals-title">Lorsque quelque chose<br /><em>demande à changer.</em></h2>
+            </div>
+            <div className="signals__list">
+              <article><span>01</span><h3>Anxiété & surcharge</h3><p>Le mental ne s’arrête plus, le sommeil se fragilise, le corps reste en état d’alerte.</p></article>
+              <article><span>02</span><h3>Répétitions & blocages</h3><p>Les mêmes situations, relations ou réactions reviennent sans que vous puissiez les dénouer.</p></article>
+              <article><span>03</span><h3>Passages de vie</h3><p>Une séparation, un deuil, une transition ou une perte de repères vient bouleverser l’équilibre.</p></article>
+              <article><span>04</span><h3>Besoin de se retrouver</h3><p>Vous souhaitez mieux vous comprendre, habiter pleinement vos choix et retrouver de l’élan.</p></article>
+            </div>
           </div>
         </section>
 
@@ -52,13 +73,28 @@ export default function Home() {
           <div className="shell">
             <div className="section-heading">
               <p className="eyebrow">Les accompagnements</p>
-              <h2>Plusieurs chemins,<br /><em>une même présence.</em></h2>
+              <div className="section-heading__split">
+                <h2>Plusieurs chemins,<br /><em>une même présence.</em></h2>
+                <p>Chaque accompagnement s’ajuste à votre histoire, à ce que vous traversez aujourd’hui et à la manière dont vous souhaitez avancer.</p>
+              </div>
             </div>
             <div className="practice-grid">
               <PracticeCard number="01" title="Psychanalyse" text="Comprendre les répétitions, les conflits intérieurs et ce qui agit à notre insu." href="/accompagnements#psychanalyse" />
               <PracticeCard number="02" title="Sophrologie" text="Retrouver un équilibre par la respiration, la détente et la conscience corporelle." href="/accompagnements#sophrologie" />
               <PracticeCard number="03" title="Somato-analyse" text="Écouter la mémoire du corps et restaurer une relation vivante à soi." href="/accompagnements#somato" />
               <PracticeCard number="04" title="Santé mentale" text="Un accompagnement clinique pour les périodes de vulnérabilité psychique." href="/accompagnements#clinique" />
+            </div>
+          </div>
+        </section>
+
+        <section className="method section shell">
+          <div className="method__aside"><p className="eyebrow">Le cadre thérapeutique</p><p className="method__index">03 repères</p></div>
+          <div className="method__content">
+            <h2>Un travail profond,<br /><em>à votre rythme.</em></h2>
+            <div className="method__steps">
+              <article><span>01</span><div><h3>Accueillir</h3><p>Créer un espace suffisamment sûr pour déposer ce qui pèse, sans avoir à préparer vos mots ni à savoir exactement par où commencer.</p></div></article>
+              <article><span>02</span><div><h3>Comprendre</h3><p>Mettre en lumière les liens entre votre histoire, vos émotions, vos pensées et ce que votre corps exprime aujourd’hui.</p></div></article>
+              <article><span>03</span><div><h3>Transformer</h3><p>Faire émerger de nouvelles façons d’être en relation, de poser vos limites et de choisir ce qui vous ressemble davantage.</p></div></article>
             </div>
           </div>
         </section>
@@ -80,6 +116,21 @@ export default function Home() {
             <p className="eyebrow">Pour qui ?</p>
             <p>Adultes · Adolescents · Professionnels</p>
             <p>En cabinet à Fréjus et en visioconférence, dans toute la France.</p>
+          </div>
+        </section>
+
+        <section className="first-session">
+          <div className="shell first-session__grid">
+            <div><p className="eyebrow">Le premier rendez-vous</p><h2>Un premier temps<br /><em>pour faire connaissance.</em></h2></div>
+            <div className="first-session__content">
+              <p>Cette première séance permet de déposer ce qui vous amène, de préciser vos besoins et de découvrir ma manière de travailler. Vous n’avez rien à préparer : nous partons simplement de là où vous en êtes.</p>
+              <div className="first-session__facts">
+                <div><strong>01</strong><span>Écoute de votre demande</span></div>
+                <div><strong>02</strong><span>Choix du cadre adapté</span></div>
+                <div><strong>03</strong><span>Décision libre de poursuivre</span></div>
+              </div>
+              <Link href="/rendez-vous" className="button">Préparer ce premier échange <Arrow /></Link>
+            </div>
           </div>
         </section>
 
