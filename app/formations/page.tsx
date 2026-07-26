@@ -17,7 +17,7 @@ export default function Formations() {
     <StandardPage>
       <PageHero
         eyebrow="Formation professionnelle · 150 heures"
-        title={<>Devenir<br />somato-analyste.</>}
+        title={<>Devenir<br /><span className="training-hero__profession">somato-analyste.</span></>}
         lead="Un parcours clinique et expérientiel pour apprendre à écouter ce qui se dit par les mots, le corps, le souffle et la relation."
       />
 
