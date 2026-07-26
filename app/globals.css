@@ -449,19 +449,21 @@ footer{background:#eee4d5;color:var(--ink);padding:80px 0 25px}
 .mobile-menu__footer>a:last-child{display:flex;justify-content:space-between;align-items:center;text-transform:uppercase;letter-spacing:.1em;font-size:.65rem}
 .brand small{display:none}
 .nav-cta{font-size:.58rem}
-.hero__grid{min-height:0}
-.hero h1{font-size:4.25rem}
+.hero__grid{min-height:0;padding-top:24px;padding-bottom:20px}
+.hero__copy>.eyebrow{margin-bottom:16px}
+.hero h1{font-size:4.25rem;margin-bottom:24px}
 .hero__mobile-break{display:inline}
 .hero__desktop-break{display:none}
 .hero h1{white-space:nowrap}
-.hero__lead{font-size:.95rem}
+.hero__lead{font-size:.95rem;margin-bottom:26px}
 .hero__lead:before{display:none}
 .hero__actions{align-items:flex-start;flex-direction:column}
 .hero__marquee{justify-content:flex-start;overflow:hidden;margin-inline:-18px}
 .hero__marquee-track{width:max-content;gap:28px;animation:mobile-marquee 16s linear infinite;will-change:transform}
 .hero__marquee-set:nth-child(2),.hero__marquee-set:first-child>i:last-child{display:flex}
 .hero__marquee-set{flex:0 0 auto}
-.hero__trust{gap:10px 18px}
+.hero__trust{gap:10px 18px;margin-top:28px}
+.portrait-card{margin:42px auto 20px}
 .portrait-card__seal{right:-10px}
 .intro{gap:50px}
 .intro__visual{min-height:520px}
