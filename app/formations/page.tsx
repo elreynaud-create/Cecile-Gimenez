@@ -98,6 +98,7 @@ export default function Formations() {
           </div>
           <div className="training-audience__cta">
             <p>Un échange préalable permet d’explorer votre parcours, vos attentes et la cohérence de cette formation avec votre projet professionnel.</p>
+            <div className="offer-price"><span>Tarif de la formation</span><strong>2 750 €</strong><small>Parcours complet · 150 heures</small></div>
             <Link href="/rendez-vous?motif=formation" className="button button--light">Recevoir le programme complet <Arrow /></Link>
           </div>
         </div>
