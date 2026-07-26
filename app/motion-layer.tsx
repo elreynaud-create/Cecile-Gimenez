@@ -100,9 +100,41 @@ export default function MotionLayer() {
     progress();
     window.addEventListener("scroll", progress, { passive: true });
 
+    const header = document.querySelector<HTMLElement>(".site-header");
+    const mobile = window.matchMedia("(max-width: 560px)");
+    let lastScrollY = window.scrollY;
+
+    const updateHeader = () => {
+      if (!header || !mobile.matches) {
+        header?.classList.remove("is-hidden-mobile");
+        lastScrollY = window.scrollY;
+        return;
+      }
+
+      const currentScrollY = Math.max(window.scrollY, 0);
+      const difference = currentScrollY - lastScrollY;
+
+      if (currentScrollY <= 12) {
+        header.classList.remove("is-hidden-mobile");
+      } else if (difference > 7 && currentScrollY > 100) {
+        header.classList.add("is-hidden-mobile");
+      } else if (difference < -7) {
+        header.classList.remove("is-hidden-mobile");
+      }
+
+      if (Math.abs(difference) > 7) lastScrollY = currentScrollY;
+    };
+
+    updateHeader();
+    window.addEventListener("scroll", updateHeader, { passive: true });
+    mobile.addEventListener("change", updateHeader);
+
     return () => {
       observer.disconnect();
       window.removeEventListener("scroll", progress);
+      window.removeEventListener("scroll", updateHeader);
+      mobile.removeEventListener("change", updateHeader);
+      header?.classList.remove("is-hidden-mobile");
       root.classList.remove("motion-ready");
     };
   }, [pathname]);

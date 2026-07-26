@@ -419,7 +419,8 @@ footer{background:#eee4d5;color:var(--ink);padding:80px 0 25px}
 .section{padding:90px 0}
 }
 
-@media(max-width:560px){.site-header{height:78px;padding:0 18px}
+@media(max-width:560px){.site-header{height:78px;padding:0 18px;animation:none;transition:transform .38s cubic-bezier(.22,1,.36,1),box-shadow .3s;will-change:transform}
+.site-header.is-hidden-mobile{transform:translateY(calc(-100% - 3px));box-shadow:none}
 .brand small{display:none}
 .nav-cta{font-size:.58rem}
 .hero__grid{min-height:0}
