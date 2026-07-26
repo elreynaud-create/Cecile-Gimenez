@@ -350,6 +350,8 @@ footer{background:#eee4d5;color:var(--ink);padding:80px 0 25px}
 .contact-grid h2{font-size:3.8rem;margin-bottom:30px}
 .contact-details{margin-top:50px;padding-top:25px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;font-size:.78rem}
 .contact-form{background:var(--paper);padding:45px;box-shadow:0 24px 70px rgba(70,34,38,.1)}
+.contact-honeypot{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
+.contact-details a{font-family:"Italiana",serif;font-size:1.15rem;color:var(--accent)}
 .contact-form label{display:flex;flex-direction:column;gap:7px;font-size:.69rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:20px}
 .field-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .contact-form input,.contact-form select,.contact-form textarea{border:0;border-bottom:1px solid #a48d6d;background:transparent;padding:12px 0;font:inherit;font-size:.9rem;color:var(--ink);outline:none}

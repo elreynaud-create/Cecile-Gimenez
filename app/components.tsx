@@ -27,7 +27,7 @@ export function Footer() {
       <div className="shell footer-grid">
         <div className="brand brand--light"><span className="brand__mark">C</span><span><strong>Cécile Gimenez</strong><small>Psyché · Corps · Conscience</small></span></div>
         <div><p className="footer-title">Explorer</p><Link href="/accompagnements">Accompagnements</Link><Link href="/retraites">Retraites</Link><Link href="/formations">Formations</Link></div>
-        <div><p className="footer-title">Cabinet</p><Link href="/a-propos">À propos</Link><Link href="/rendez-vous">Prendre rendez-vous</Link><a href="https://t.me/share/url?url=&text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous." target="_blank" rel="noreferrer">Telegram</a></div>
+        <div><p className="footer-title">Cabinet</p><Link href="/a-propos">À propos</Link><Link href="/rendez-vous">Prendre rendez-vous</Link><a href="tel:+33625936035">06 25 93 60 35</a></div>
         <div><p className="footer-title">Zone de consultation</p><p>Fréjus · Saint-Raphaël<br />Var · Côte d’Azur<br />Consultations en ligne</p></div>
       </div>
       <div className="shell footer-bottom"><span>© 2026 · Tous droits réservés</span><span>Confidentialité · Mentions légales</span></div>
