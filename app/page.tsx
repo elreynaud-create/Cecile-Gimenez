@@ -43,7 +43,10 @@ export default function Home() {
             </div>
           </div>
           <div className="hero__marquee" aria-label="Domaines de pratique">
-            <span>Psychanalyse</span><i>✦</i><span>Sophrologie</span><i>✦</i><span>Somato-analyse</span><i>✦</i><span>Formation</span><i>✦</i><span>Retraites</span>
+            <div className="hero__marquee-track">
+              <div className="hero__marquee-set"><span>Psychanalyse</span><i>✦</i><span>Sophrologie</span><i>✦</i><span>Somato-analyse</span><i>✦</i><span>Formation</span><i>✦</i><span>Retraites</span><i>✦</i></div>
+              <div className="hero__marquee-set" aria-hidden="true"><span>Psychanalyse</span><i>✦</i><span>Sophrologie</span><i>✦</i><span>Somato-analyse</span><i>✦</i><span>Formation</span><i>✦</i><span>Retraites</span><i>✦</i></div>
+            </div>
           </div>
         </section>
 
