@@ -42,10 +42,19 @@ export default function Home() {
         </section>
 
         <section className="intro section shell">
-          <div>
+          <div className="intro__heading">
             <p className="eyebrow">Une présence clinique, une écoute singulière</p>
             <h2>Mettre des mots.<br /><em>Remettre du mouvement.</em></h2>
           </div>
+          <figure className="intro__visual">
+            <img
+              src="/presence-clinique-ecoute.png"
+              alt="Un espace d’écoute lumineux et apaisant, propice à la parole"
+              width="1122"
+              height="1402"
+            />
+            <figcaption><span>02</span><p>Un espace pour déposer,<br />comprendre et transformer.</p></figcaption>
+          </figure>
           <div className="intro__text">
             <p className="intro__opening">Il arrive que les mots ne suffisent plus, que le corps parle à leur place ou qu’une même difficulté revienne, malgré toute la volonté d’avancer.</p>
             <p>Je vous accueille dans un cadre confidentiel, stable et sans jugement. Ensemble, nous prenons le temps d’entendre ce qui demande à l’être, de reconnaître vos ressources et de construire un chemin qui respecte votre rythme.</p>
