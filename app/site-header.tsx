@@ -48,6 +48,7 @@ export function SiteHeader() {
             onClick={() => setOpen((value) => !value)}
           >
             <span className="brand__mark">C</span>
+            <span className="brand__menu-hint" aria-hidden="true">Touchez pour ouvrir</span>
           </button>
           <Link href="/" aria-label="Accueil">
             <strong>Cécile Gimenez</strong>

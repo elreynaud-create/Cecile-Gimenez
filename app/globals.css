@@ -34,6 +34,7 @@ h2{font-size:clamp(3rem,6vw,6.5rem);margin-bottom:0}
 .brand{display:flex;align-items:center;gap:11px}
 .brand>a{display:block}
 .brand__menu{display:none;color:inherit}
+.brand__menu-hint{display:none}
 .brand__mark{width:38px;height:38px;border:1px solid var(--accent);border-radius:50%;display:grid;place-items:center;font-family:"Italiana";font-size:1.3rem;color:var(--accent)}
 .brand strong,.brand small{display:block}
 .brand strong{font-family:"Italiana";font-size:1.17rem;line-height:1}
@@ -375,6 +376,7 @@ footer{background:#eee4d5;color:var(--ink);padding:80px 0 25px}
 @keyframes header-enter{from{opacity:0;transform:translateY(-100%)}to{opacity:1;transform:none}}
 @keyframes portrait-enter{from{opacity:0;transform:translateY(55px) scale(.96);clip-path:inset(12% 0 0)}to{opacity:1;transform:none;clip-path:inset(0)}}
 @keyframes mobile-marquee{to{transform:translateX(calc(-50% - 14px))}}
+@keyframes menu-hint{0%,62%{opacity:1}100%{opacity:0;visibility:hidden}}
 @keyframes orb-enter{from{opacity:0;transform:scale(.72)}to{opacity:.9;transform:scale(1)}}
 @keyframes orb-breathe{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(-16px,12px,0) scale(1.035)}}
 
@@ -431,7 +433,9 @@ footer{background:#eee4d5;color:var(--ink);padding:80px 0 25px}
 .site-header.is-hidden-mobile{transform:translateY(calc(-100% - 3px));box-shadow:none}
 .site-header.menu-open{transform:none!important;background:rgba(251,248,242,.98)}
 .brand__desktop-mark{display:none!important}
-.brand__menu{display:block;border:0;padding:0;background:transparent;color:inherit;cursor:pointer}
+.brand__menu{display:block;position:relative;border:0;padding:0;background:transparent;color:inherit;cursor:pointer}
+.brand__menu-hint{display:block;position:absolute;top:43px;left:50%;width:max-content;transform:translateX(-50%);font-size:.46rem;line-height:1;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);pointer-events:none;animation:menu-hint 6s ease forwards}
+.site-header.menu-open .brand__menu-hint{display:none}
 .brand__menu .brand__mark{transition:transform .65s cubic-bezier(.22,1,.36,1),background .35s,color .35s}
 .site-header.menu-open .brand__menu .brand__mark{transform:rotate(135deg);background:var(--accent);color:var(--paper)}
 .mobile-menu__backdrop{display:block;position:fixed;inset:78px 0 0;background:rgba(40,32,25,.32);backdrop-filter:blur(3px);border:0;z-index:28;opacity:0;visibility:hidden;transition:opacity .4s,visibility .4s}
