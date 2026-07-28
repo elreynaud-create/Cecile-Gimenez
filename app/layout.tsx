@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import MotionLayer from "./motion-layer";
 import { SITE_URL } from "./seo";
@@ -19,5 +20,5 @@ export const metadata: Metadata = {
 };
 const schema={"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":`${SITE_URL}/#website`,url:SITE_URL,name:"Cécile Gimenez",alternateName:"Cécile Gimenez · Psyché · Corps · Conscience",inLanguage:"fr-FR"},{"@type":["Person","ProfessionalService"],"@id":`${SITE_URL}/#cecile-gimenez`,name:"Cécile Gimenez",url:SITE_URL,telephone:"+33625936035",image:`${SITE_URL}/cecile-gimenez-portrait-editorial.png`,description:"Psychanalyste, sophrologue, somato-analyste, formatrice et clinicienne en santé mentale à Fréjus.",address:{"@type":"PostalAddress","streetAddress":"49 place du Couvent","addressLocality":"Fréjus","postalCode":"83600","addressRegion":"Var","addressCountry":"FR"},areaServed:[{"@type":"City","name":"Fréjus"},{"@type":"City","name":"Saint-Raphaël"},{"@type":"AdministrativeArea","name":"Var"},{"@type":"Country","name":"France"}],knowsAbout:["Psychanalyse","Sophrologie","Somato-analyse","Santé mentale","Neuroatypies","Addictions","Troubles des conduites alimentaires","Accompagnement des enfants et adolescents"],hasOfferCatalog:{"@type":"OfferCatalog","name":"Accompagnements","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Psychanalyse"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Sophrologie"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Somato-analyse"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Accompagnement clinique en santé mentale"}}]}}]};
 export default function RootLayout({children}:{children:React.ReactNode}) {
-  return <html lang="fr"><body><MotionLayer />{children}<script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}} /></body></html>;
+  return <html lang="fr"><body><MotionLayer />{children}<Analytics /><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}} /></body></html>;
 }
